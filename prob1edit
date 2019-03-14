@@ -1,0 +1,45 @@
+// A program to show the total ticket sales of a football stadium.
+// which shows four different ticket types:
+// Box, Sideline, Premium, General admission
+
+#include <iostream>
+#include <conio.h>
+#include <string>
+
+using namespace std;
+
+int main ()
+{	
+	int Box1, Sideline1, Premium1, General_admission1, BoxTS, SidelineTS, PremiumTS, GeneralTS;
+	double Total;
+		Box1 = 250;
+		Sideline1 = 100;
+		Premium1 = 50;
+		General_admission1 = 25;
+
+		Total = (Box1*BoxTS)+(Sideline1*SidelineTS)+(Premium1*PremiumTS)+(General_admission1*GeneralTS);
+
+		cout << "List of Ticket Price and Ticket Sold" << endl;
+		cout << "Box = $250" << endl;
+		cout << "Sideline = $100" << endl;
+		cout << "Premium =  $50" << endl;
+		cout << "General admission = $25" << endl;
+
+		cout << "Enter quantity ticket sold in the Box" << endl;
+		cin >> BoxTS;
+		cout << "Enter quantity ticket sold in the Sideline" << endl;
+		cin >> SidelineTS;
+		cout << "Enter quantity ticket sold in the Premium" << endl;
+		cin >> PremiumTS;
+		cout << "Enter quantity ticket sold in the General admission" << endl;
+		cin >> GeneralTS;
+
+		cout << "Total amount of ticket sales for the Box" << Box1*BoxTS << endl;
+		cout << "Total amount of ticket sales for the Sideline" << Sideline1*SidelineTS << endl;
+		cout << "Total amount of ticket sales for the Premium" << Premium1*PremiumTS << endl;
+		cout << "Total amount of ticket sales for the General Admission" << General_admission1*GeneralTS << endl;
+		cout << "Total amount of ticket sales in game" << Total << endl;
+
+		_getch();
+		return 0;
+}
